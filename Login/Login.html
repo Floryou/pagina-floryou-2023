@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlorYou</title>
+    <link rel="website icon" type="png" href="../Login/img/FlorYou2.png">
+  <link rel="stylesheet"  href="Login.css">
+  <script src="https://kit.fontawesome.com/cc87f82f73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Registrate</h1>
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Nombre" >
+          </div>
+
+
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Correo" required>
+            </div>
+
+
+              <div class="input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Contraseña" required>
+                
+              </div>
+              <p>¿Perdiste tu Contrasena? <a href="#">Click Aqui</a></p>
+        </div>
+        <div class="btn-field">
+          <button type="submit" id="signupBtn" required>Registrate</button>
+          
+          <button type="submit" class="disable" id="signinBtn" >Inicia Sesion</button>
+      
+      </form>
+    </div>
+  </div>
+<script>
+
+let signupBtn = document.getElementById("signupBtn");
+let signinBtn = document.getElementById("signinBtn");
+let nameField = document.getElementById("nameField");
+let title = document.getElementById("title");
+
+
+signinBtn.onclick = function(){
+  nameField.style.maxHeight = "0";
+}
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
